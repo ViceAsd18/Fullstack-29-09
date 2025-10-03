@@ -1,7 +1,9 @@
 import React from "react";
 
-import ButtonHeader from "componentes/atomos/ButtonHeader";
+import ButtonHeader from "componentes/atomos/Button";
 import LogoHeader from "componentes/atomos/LogoHeader";
+
+import { NavLink } from "react-router";
 
 function HeaderHome (){
     return (
@@ -14,17 +16,17 @@ function HeaderHome (){
                 display : 'flex',
                 gap : '15px',
             }}>
-                <ButtonHeader texto="Browse"/>
-                <ButtonHeader texto="My Learning"/>
-                <ButtonHeader texto="Wishlist"/>
+                <ButtonHeader texto="Browse" to="/browse"/>
+                <ButtonHeader texto="My Learning" to="/my-learning"/>
+                <ButtonHeader texto="Wishlist" to="/wishlist"/>
             </div>
 
             <div style={{
                 display : 'flex',
-                gap : '5px'
-
+                gap : '5px',
+                alignItems : 'center'
             }}>
-                <ButtonHeader texto="Log in"/>
+                <ButtonHeader texto="Log in" to="/login"/>
                 <LogoHeader/>
             </div>
 

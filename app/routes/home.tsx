@@ -1,5 +1,4 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 import HomeLayout from "componentes/layouts/HomeLayout";
 
 export function meta({}: Route.MetaArgs) {
