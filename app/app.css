@@ -68,7 +68,8 @@ body {
 
 /*FOOTER*/
 .footer-section {
-  margin: 200px 0px;
+  margin-top: 200px;
+  margin-bottom: 60px;
 }
 
 .footer-container {
@@ -86,4 +87,43 @@ body {
 
 
 
+@media (max-width: 750px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;  
+    gap: 50px;
+  }
+  .card {
+    width: 90%;         
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .cards-titulo {
+    text-align: center;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1450px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+  }
+
+  .card {
+    flex: none;
+    width: 45%;       
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 45%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 

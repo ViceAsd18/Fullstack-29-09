@@ -29,7 +29,7 @@ export default function HomeLayout () {
             <Layout>
                 <Content>
                     <main className='contenido-home'>
-                        <MainBanner></MainBanner>
+                        <MainBanner/>
                         <div className='contenedor-cards'>
                             <div className='cards-titulo'>
                                 <Titulo texto='Featured Courses'></Titulo>

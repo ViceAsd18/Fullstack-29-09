@@ -7,11 +7,11 @@ interface TituloProps {
 
 const Titulo : React.FC<TituloProps> = ({ texto }) => {
     return (
-        <h1 style={{
+        <h1
+        style={{
             fontSize : '30px',
             fontWeight : 700,
             marginInline : 'auto'
-
         }} >{texto}</h1>
     )
 }
